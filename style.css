@@ -464,8 +464,36 @@ footer{
     .product-description br{
         display: none;
     }
+
+    /* feature */
+    .feature{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+    }
+
+    .feature-description{
+        text-align: center;
+        width: 90%;
+    }
+
+    .feature-heading{
+        font-size: 24px;
+    }
+
+    .feature-paragraph{
+        margin-bottom: 20px;
+    }
+
+    .feature-image img{
+        width: 300px;
+        height: 188px;
+        margin-top: 30px;
+    }
+
+
 }
 
-  .feature, footer{
+   footer{
     display: none;
 }
