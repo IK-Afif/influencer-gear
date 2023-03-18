@@ -8,7 +8,6 @@
 --------------------- */
 header{
     width: 85%;
-    height: 700px;
     margin-bottom: 100px;
     margin-top: 20px;
 }
@@ -20,6 +19,10 @@ header{
 
 .tag-head{
     width: 60%;
+}
+
+.mobile-only-nav{
+    display: none;
 }
 
 .tag-head-description{
@@ -53,9 +56,6 @@ header{
 
 .container-description{
     width: 50%;
-    height: 270px;
-    margin-top: 150px;
-    margin-left: 0;
 }
 
 .banner-head{
@@ -107,7 +107,7 @@ header{
 --------------------- */
 .logos{
     position: relative;
-    width: 1110px;
+    width: 75%;
     height: 110px;
     margin-bottom: 100px;
 }
@@ -116,7 +116,6 @@ header{
     display: flex;
     padding: 4%;
     border: 1px solid #AAAAAA;
-    /* border-image: linear-gradient(90deg, #c0ccda1a 0%, #c0ccda99 50.38%, #c0ccda1a 100%); */
     border-left: 0;
     border-right: 0;
 }
@@ -125,8 +124,6 @@ header{
    popular collection
 --------------------- */
 .collection{
-    width: 1047px;
-    height: 1662px;
     margin-bottom: 100px;
 }
 
@@ -226,12 +223,14 @@ header{
     font-weight: 700;
     font-size: 38px;
     color: #0A0826;
+    margin-bottom: 16px;
 }
 
 .feature-paragraph{
     font-weight: 700;
     font-size: 16px;
     color: #6C6C6C;
+    margin-bottom: 16px;
 }
 
 .feature-image img{
@@ -256,7 +255,6 @@ header{
 --------------------- */
 footer{
     width: 100%;
-    height: 239px;
     background: #0A0826;
     text-align: center;
     margin-top: 100px;
@@ -292,4 +290,182 @@ footer{
     width: 32px;
     height: 32px;
     color: #FFFFFF;
+}
+
+/* -------------------
+    desk view
+--------------------- */
+@media screen and (min-width: 689px){
+    header{
+        height: 550px;
+    }
+    /* banner */
+    .container-description{
+        margin-top: 150px;
+        margin-left: 0;
+        height: 270px;
+    }
+
+    .container-images{
+        height: 475px;
+        width: 475px;
+    }
+
+    /* popular collection */
+    .collection{
+        width: 1047px;
+        height: 1662px;
+    }
+
+    
+}
+
+/* -------------------
+    mobile view
+--------------------- */
+@media screen and (max-width: 688px){
+    header{
+        margin-bottom: 50px;
+        width: 100%;
+        height: auto;
+    }
+    
+    /* navigation bar */
+    .tag-head{
+        display: flex;
+        width: 100%;
+    }
+
+    .mobile-only-nav{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .tag-head-description{
+        font-size: 16px;
+    }
+
+    .nav-element{
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .tag-head-description{
+        text-align: center;
+    }
+
+    .desk-only-nav{
+        display: none;
+    }
+
+    /* banner */
+    .container{
+        flex-direction: column-reverse;
+    }
+
+    .container-description{ 
+        width: 100%;
+        text-align: center;
+        margin-top: 16px;
+    }
+
+    .banner-head{
+        font-size: 28px;
+    }
+
+    .banner-description{
+        font-weight: 500;
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .banner-btn{
+        font-weight: 500px;
+    }
+
+    .container-images{
+        margin-top: 22px;
+        height: 275px;
+        width: 275px;
+    }
+
+    .circle-design, .circle-design img{
+        height: 257px;
+        width: 257px;
+    }
+
+    .main-camera, .main-camera img{
+        width: 220px;
+        height: 220px;
+    }
+
+    .main-camera{
+        top: -230px;
+    }
+
+    /* logos */
+    .logos{
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .logo{
+        border: 0;
+        flex-wrap: wrap;
+    
+    }
+
+    .logo img{
+        width: 20%;
+        height: 20%;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    /* popular collection */
+    .collection-heading{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product{
+        margin-bottom: 15px;
+    }
+
+    .product-heading{
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .product-price{
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .product-rating{
+        width: 130px;
+    }
+
+    .rating{
+        font-weight: 500;
+    }
+
+    .product-description{
+        width: 70%;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .product-description br{
+        display: none;
+    }
+}
+
+  .feature, footer{
+    display: none;
 }
