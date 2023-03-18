@@ -21,10 +21,6 @@ header{
     width: 60%;
 }
 
-.mobile-only-nav{
-    display: none;
-}
-
 .tag-head-description{
     font-weight: 700;
     font-size: 24px;
@@ -299,6 +295,12 @@ footer{
     header{
         height: 550px;
     }
+
+    /* nav */
+    .mobile-only-nav{
+        display: none;
+    }
+
     /* banner */
     .container-description{
         margin-top: 150px;
@@ -475,6 +477,7 @@ footer{
     .feature-description{
         text-align: center;
         width: 90%;
+        padding: 0;
     }
 
     .feature-heading{
